@@ -1,0 +1,27 @@
+/* Defines the elements of the header, main, and footer fields for all pages */
+
+html {background-color: lightgray;} /* Changes the background color of the webpage to light gray */
+
+main {background-color: lightgray;} /* changes the background color of the main section to light gray */
+
+header {background-color: black;} /* Changes the background color of the header section to black */
+
+img.logo {width: 100px; height: 100px;} /* Resizes the img with class "logo" to width/height 100px */
+
+div p.header {color: white; font-size: 30px;} /* Changes the font size and color of the paragraph classed with header in a div */
+
+ul {font-size: large;} /* changes the font-size of the ul element */
+
+nav {background-color: rgb(115,0,10);} /* sets the background color of the nav element to the USC garnet rbg color code */
+nav ul {list-style: none; text-align: center; padding-top: 5px; padding-bottom: 5px;} /* Removes the bullets, aligns the text to center, and adds padding to the ul in nav */
+nav li {display: inline-block;} /* Adds an inline block display to the li in nav */
+nav a {color:white; text-transform: capitalize;} /* Changes the text color to white and capitalizes the first letter if each word in the a in nav */
+
+button {background-color: rgb(210, 32, 47);} /* changes the background color of any buttons to rgb(210, 32, 47) */
+
+footer {background-color: rgb(251, 243, 232);} /* Changes the background color of the footer to a tan color */
+footer h1 {text-align: left;} /* Left aligns the h1 in the footer section */
+
+footer form {text-align: right;} /* right aligns the form in the footer section */
+
+div.right {text-align: right;} /* right aligns the div with the class right */

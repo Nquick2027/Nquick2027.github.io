@@ -1,0 +1,4 @@
+/* Defines the Get Involved page of the website */
+
+main h1 {text-decoration: underline; font-size: 30px; text-align: center;} /* underlines, centers, and changes the font-size of the h1 element in the main section */
+main form {text-align: center;} /* enters the form element in the main section */
