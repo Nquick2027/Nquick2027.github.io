@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Fields.css">
         <link rel="stylesheet" href="Involved.css">
+        <title>USC Student Government</title>
     </head>
 
     <!-- Google tag (gtag.js) -->
@@ -21,8 +22,6 @@
     
       gtag('config', 'G-HJ99TG9J5Y');
     </script>
-    
-    <title>USC Student Government</title>
 
     <header>
         <div>
@@ -48,32 +47,31 @@
     </header>
 
     <main>
-        <h1>Get Involved!</h1>
-        <form action="#" target="_blank" method="POST">
-            <p>
-                <label for="first">First Name:</label>
-                <input type="text" id="first" name="first">
-            </p>
-            <p>
-                <label for="last">Last Name:</label>
-                <input type="text" id="last" name="last">
-            </p>
-            <p>
-                <label for="Email">Email:</label>
-                <input type="text" id="Email" name="Email">
-            </p>
-            <p>
-                <label for="Phone">Phone:</label>
-                <input type="text" id="Phone" name="Phone">
-            </p>
-            <p>
-               <textarea id="prompt" name="prompt" 
-               placeholder="Why do you wish to join student government? Which branch do you think best fits you, and why?" rows="7" cols="50"></textarea>
-            </p>
-            <p>
-               <input type="submit" value="Submit">
-            </p>
-         </form>
+        <div class="form-container">
+            <h2>Get Involved</h2>
+            <form id="feedbackForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">USC Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="comments">Response:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="How do you fit student government? What branch would you like to join and why?" required></textarea>
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+    
+            <div id="feedbackMessage"></div>
+        </div>
+    
+        <script src="InvolvedScript.js"></script>
     </main>
 
     <footer>
