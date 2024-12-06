@@ -1,3 +1,5 @@
+// Used ChatGPT
+// Former Form before learning PHP
 // Function to validate the form
 function validateForm() {
     const name = document.getElementById('name').value;

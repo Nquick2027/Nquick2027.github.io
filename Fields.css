@@ -1,27 +1,131 @@
-/* Defines the elements of the header, main, and footer fields for all pages */
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
 
-html {background-color: lightgray;} /* Changes the background color of the webpage to light gray */
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
 
-main {background-color: lightgray;} /* changes the background color of the main section to light gray */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-header {background-color: black;} /* Changes the background color of the header section to black */
+img.logo {
+    width: 100px;
+    height: 100px;
+}
 
-img.logo {width: 100px; height: 100px;} /* Resizes the img with class "logo" to width/height 100px */
+p.header-title {
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
 
-div p.header {color: white; font-size: 30px;} /* Changes the font size and color of the paragraph classed with header in a div */
+button.login-button {
+    background-color: rgb(210, 32, 47);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-ul {font-size: large;} /* changes the font-size of the ul element */
+button.login-button:hover {
+    background-color: rgb(180, 30, 40);
+}
 
-nav {background-color: rgb(115,0,10);} /* sets the background color of the nav element to the USC garnet rbg color code */
-nav ul {list-style: none; text-align: center; padding-top: 5px; padding-bottom: 5px;} /* Removes the bullets, aligns the text to center, and adds padding to the ul in nav */
-nav li {display: inline-block;} /* Adds an inline block display to the li in nav */
-nav a {color:white; text-transform: capitalize;} /* Changes the text color to white and capitalizes the first letter if each word in the a in nav */
+/* Navigation Styles */
+nav {
+    background-color: rgb(115, 0, 10);
+    text-align: center;
+    padding: 10px 0;
+}
 
-button {background-color: rgb(210, 32, 47);} /* changes the background color of any buttons to rgb(210, 32, 47) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-footer {background-color: rgb(251, 243, 232);} /* Changes the background color of the footer to a tan color */
-footer h1 {text-align: left;} /* Left aligns the h1 in the footer section */
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
 
-footer form {text-align: right;} /* right aligns the form in the footer section */
+nav a {
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: large;
+}
 
-div.right {text-align: right;} /* right aligns the div with the class right */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main .center {
+    text-align: center;
+    padding: 20px;
+}
+
+main .button {
+    background-color: rgb(210, 32, 47);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main .button:hover {
+    background-color: rgb(180, 30, 40);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(251, 243, 232);
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
