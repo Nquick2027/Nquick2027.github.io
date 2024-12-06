@@ -8,7 +8,7 @@ html, body {
 
 /* Header Styles */
 header {
-    background-color: black;
+    background-color: rgb(115, 0, 10);
     color: white;
     padding: 10px 20px;
 }
